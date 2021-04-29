@@ -1,0 +1,135 @@
+.registration
+    margin-top: 64px
+    display: flex
+    justify-content: space-between
+
+    .registration__Form
+        width: 360px
+        display: flex
+        flex-direction: column
+
+        .registration__YourName
+            display: flex
+            flex-direction: column
+            margin-bottom: 31px
+
+            & h3
+                display: flex
+                flex-direction: column
+                font-weight: 300
+                font-size: 16px
+                line-height: 19px
+                color: #222222
+                margin-bottom: 21px
+
+            & input
+                height: 45px
+                font-weight: 300
+                font-size: 13px
+                line-height: 16px
+                color: #B1B1B1
+                padding-left: 17px
+
+            & input:not(:last-child)
+                margin-bottom: 21px
+
+        .registration__Sex
+            display: flex
+            margin-bottom: 33px
+
+            & input
+                align-self: baseline
+                size: 17px
+                border: 1px solid #A4A4A4
+                box-sizing: border-box
+                background-color: #F16D7F
+
+            & label
+                font-weight: 300
+                font-size: 11px
+                line-height: 13px
+                color: #000000
+                margin-left: 10px
+
+            & label:not(:last-of-type)
+                margin-right: 20px
+
+        .registration__LoginDetails
+            display: flex
+            flex-direction: column
+            margin-bottom: 39px
+
+            & h3
+                font-weight: 300
+                font-size: 16px
+                line-height: 19px
+                color: #222222
+                margin-bottom: 21px
+
+            & p
+                font-weight: 300
+                font-size: 13px
+                line-height: 16px
+                color: #B1B1B1
+                margin-top: 15px
+
+            & input
+                height: 45px
+                font-weight: 300
+                font-size: 13px
+                line-height: 16px
+                color: #B1B1B1
+                padding-left: 17px
+
+            & input:not(:last-of-type)
+                margin-bottom: 21px
+
+        .registration__Button
+            width: 167px
+            height: 50px
+            display: flex
+            font-size: 14px
+            line-height: 17px
+            color: #FFFFFF
+            background: #F16D7F
+            padding: 16px 24px 17px 29px
+            border: #F16D7F
+            transition: background 0.5s
+
+            & svg
+                margin-top: 4px
+                margin-left: 20px
+
+        .registration__Button:hover
+            background: #E05C6E
+
+    .registration__LoyaltyProgram
+        max-width: 652px
+        display: flex
+        flex-direction: column
+
+        & h3
+            font-weight: 300
+            font-size: 24px
+            line-height: 29px
+            color: #000000
+            margin-bottom: 22px
+
+        & p
+            font-weight: 300
+            font-size: 24px
+            line-height: 29px
+            color: #000000
+            margin-bottom: 21px
+
+        & ul
+            font-weight: 300
+            font-size: 24px
+            line-height: 29px
+            color: #000000
+            list-style-type: none
+            list-style-image: url(../img/Sign.svg)
+            list-style-position: inside
+
+            & li:not(:last-of-type)
+                margin-bottom: 16px

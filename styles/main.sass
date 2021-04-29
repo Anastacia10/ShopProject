@@ -1,0 +1,656 @@
+html
+	box-sizing: border-box
+
+*,
+*:before,
+*:after
+	box-sizing: inherit
+
+*
+	margin: 0
+	padding: 0
+
+body
+	font-family: 'Lato', sans-serif
+
+main
+	flex-grow: 1
+
+a
+	text-decoration: none
+
+summary
+	display: block
+
+summary::-webkit-details-marker
+	display: none
+
+.center
+	padding-left: calc(50% - 570px)
+	padding-right: calc(50% - 570px)
+
+.wrapper
+	min-height: 100vh
+	display: flex
+	flex-direction: column
+
+.header
+	position: relative
+	height: 75px
+	flex-grow: 1
+	display: flex
+	justify-content: space-between
+	align-items: center
+	background-color: #222222
+
+	&__Left a:not(:last-child)
+		margin-right: 41px
+
+	&__Right a:not(:last-child)
+		margin-right: 33px
+
+	& svg
+		transition: all 0.1s
+
+	& svg:hover
+		transform: scale(1.05)
+
+	&__WhiteButton:hover path
+		fill: #F16D7F
+
+nav
+	position: absolute
+	top: 75px
+	right: 0px
+	width: 232px
+	height: 764px
+	padding-top: 16px
+	padding-left: 33px
+	background-color: #FFFFFF
+	box-shadow: 0 0px 3px
+	z-index: 1
+
+	& div
+		position: relative
+
+	& img
+		position: absolute
+		top: 0px
+		right: 17px
+		width: 12px
+		height: 12px
+
+	& h2
+		font-size: 14px
+		line-height: 17px
+		color: #000000
+		padding-top: 21px
+		margin-bottom: 24px
+
+	& h3
+		font-size: 14px
+		line-height: 17px
+		color: #F16D7F
+		margin-bottom: 12px
+		margin-top: 20px
+
+	& li
+		font-size: 14px
+		line-height: 17px
+		color: #6F6E6E
+		list-style-type: none
+		padding-left: 21px
+		margin-bottom: 11px
+
+#hiddenMenu:checked
+	nav
+		right: -232px
+
+.promo
+	display: flex
+	padding-left: calc(50% - 800px)
+	padding-right: calc(50% - 800px)
+	margin-bottom: 64px
+	background: #F1E4E6
+
+	& img
+		width: 100%
+
+	&__Left
+		width: 50%
+
+	&__Right
+		width: 50%
+
+	.promo__Content
+		padding-left: 16px
+		border-left: 12px solid #F16D7F
+		margin-top: 30%
+
+		& h1
+			font-weight: 900
+			font-size: 48px
+			line-height: 58px
+			color: #222222
+
+		& h3
+			font-weight: 900
+			font-size: 32px
+			line-height: 38px
+			color: #222222
+
+		& span
+			color: #F16D7F
+
+.sale
+	margin-bottom: 96px
+
+	& img
+		width: 100%
+
+	.sale__Box
+		display: flex
+		margin-bottom: 30px
+
+		& div
+			flex-grow: 1
+
+		& div:not(:last-child)
+			margin-right: 30px
+
+	&__Item
+		position: relative
+		transition: transform 0.3s
+
+	&__Item:hover
+		transform: scale(1.03)
+	.sale__Content
+		position: absolute
+		top: 0
+		left: 0
+		height: 100%
+		width: 100%
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+
+		& p
+			font-size: 16px
+			line-height: 19px
+			text-align: center
+			color: #FFFFFF
+
+		& h3
+			font-size: 24px
+			line-height: 29px
+			text-align: center
+			color: #F16D7F
+
+.featuredItems.catalog
+	position: relative
+	margin-bottom: 13px
+
+.featuredItems
+	display: flex
+	flex-flow: column nowrap
+
+	.featuredItems__Title
+		text-align: center
+		margin-bottom: 48px
+
+		& h2
+			font-size: 30px
+			line-height: 36px
+			color: #222222
+			margin-bottom: 6px
+
+		& p
+			font-size: 14px
+			line-height: 17px
+			color: #9F9F9F
+
+	.featuredItems__SortingPart
+		position: absolute
+		z-index: 2
+		display: flex
+		padding-top: 39px
+		padding-bottom: 33px
+
+		.featuredItems__FilterBox
+			height: 48px
+			margin-right: 30px
+
+			.featuredItems__FilterBox svg
+				padding-left: 11px
+
+			.featuredItems__FilterMain
+				width: 360px
+				background-color: #fff
+				padding: 13px 16px 16px
+
+				.FeaturedItems__FilterMainName
+					outline: none
+
+				.featuredItems__FilterInserted
+					margin-top: 16px
+
+				.featuredItems__FilterInserted[open] summary
+					color: #F16D7F
+
+				.featuredItems__FilterInserted summary
+					border-left: 5px solid #F16D7F
+
+				.featuredItems__FilterInserted span
+					height: 37px
+					display: block
+					line-height: 37px
+					padding-left: 11px
+					border-bottom: 1px solid #EBEBEB
+
+				.featuredItems__FilterInserted ul
+					list-style-type: none
+					padding-left: 16px
+					margin-top: 24px
+
+				.featuredItems__FilterInserted a
+					font-size: 14px
+					line-height: 17px
+					color: #6F6E6E
+					margin-bottom: 11px
+					display: block
+
+				.featuredItems__FilterInserted a:hover
+					color: #F16D7F
+
+			.featuredItems__FilterMain[open]
+				box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+				border: 1px solid #EBEBEB
+
+				& .FeaturedItems__FilterMainName
+					color: #F16D7F
+
+				& path
+					fill: #F16D7F
+
+		.featuredItems__Parameters
+			width: 360px
+			display: flex
+			column-gap: 28px
+			padding-top: 13px
+
+			& details[open]
+				position: relative
+
+			& summary
+				display: flex
+				font-size: 14px
+				line-height: 17px
+				color: #6F6E6E
+				outline: none
+
+			& svg
+				align-self: center
+
+			& span:not(:last-child)
+				margin-right: 10px
+
+			.featuredItems__ParametersCheckbox
+				position: absolute
+				left: -9px
+				width: 79px
+				height: 103px
+				margin-top: 5px
+				background-color: #FFFFFF
+				box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+				border: 1px solid #EBEBEB
+				padding-top: 10px
+				padding-left: 10px
+
+			& input
+				width: 13px
+				height: 13px
+				border: 1px solid #EBEBEB
+				margin-right: 9px
+				margin-bottom: 6px
+
+			& label
+				font-size: 14px
+				line-height: 16px
+				color: #6F6E6E
+				margin-bottom: 6px
+
+			& label:not(:last-child)
+				margin-bottom: 6px
+
+	.featuredItems__Box.catalog
+		margin-top: 133px
+
+	.featuredItems__Box
+		display: flex
+		flex-flow: row wrap
+		justify-content: center
+		align-content: center
+		column-gap: 30px
+		row-gap: 30px
+
+		.featuredItems__Card
+			width: 360px
+			min-height: 581px
+			display: flex
+			flex-flow: column wrap
+			background-color: #F8F8F8
+			padding-bottom: 20px
+
+		.featuredItems__Card h3
+			font-size: 13px
+			line-height: 16px
+			color: #000000
+			padding-left: 18px
+
+		.featuredItems__Card p:not(:last-child)
+			font-weight: 300
+			font-size: 14px
+			line-height: 17px
+			color: #5D5D5D
+			padding-left: 16px
+			margin-bottom: 18px
+			margin-top: 12px
+
+		.featuredItems__Card .Price
+			font-size: 16px
+			line-height: 19px
+			color: #F16D7F
+
+		.featuredItems__CardPhoto
+			position: relative
+			width: 100%
+			margin-bottom: 24px
+
+			.featuredItems__CardHiddenButton
+				display: none
+				position: absolute
+				top: 189px
+				left: 111px
+				width: 138px
+				height: 43px
+				padding: 8px 12px 8px 13px
+				border: 1px solid #FFFFFF
+				transition: all 0.4s
+
+				.featuredItems__CardHiddenButtonBox
+					display: flex
+					justify-content: space-around
+
+					& svg
+						width: 26px
+						height: 24px
+
+					& p
+						align-self: center
+						font-size: 14px
+						line-height: 17px
+						color: #FFFFFF
+
+		.featuredItems__CardPhoto  a:first-child
+			transition: all 0.4s
+
+		.featuredItems__CardPhoto:hover a:first-child
+			filter: brightness(50%)
+
+		.featuredItems__CardPhoto:hover .featuredItems__CardHiddenButton
+			display: inline-block
+
+		.featuredItems__CardHiddenButton:hover
+			background: #FFFFFF
+
+		.featuredItems__CardHiddenButton:hover .featuredItems__CardHiddenButtonBox p
+			color: black
+
+		.featuredItems__CardHiddenButton:hover .featuredItems__CardHiddenButtonBox path
+			fill: black
+			display: block
+			align-self: center
+
+	.featuredItems__Pagination
+		width: 284px
+		height: 44px
+		display: flex
+		justify-content: space-around
+		align-self: center
+		border: 1px solid #EBEBEB
+		padding: 12px 16px 13px
+		margin-top: 49px
+
+		& a,
+		& p
+			display: inline-block
+			font-weight: 300
+			font-size: 16px
+			line-height: 19px
+			color: #e1e1e1
+
+		& a:nth-of-type(2)
+			color: #EF5B70
+
+		& a:hover
+			color: #F16D7F
+
+	.featuredItems__ButtonBrowse
+		display: block
+		align-self: center
+
+		& button
+			font-size: 16px
+			line-height: 19px
+			color: #F26376
+			padding: 14px 38px
+			border: 1px solid #FF6A6A
+			margin-top: 48px
+			background-color: #FFFFFF
+			transition: all 0.4s
+
+		& button:hover
+			color: #FFFFFF
+			background-color: #F26376
+
+.page__Name
+	height: 148px
+	display: flex
+	justify-content: space-between
+	align-content: center
+	background-color: #F8F3F4
+
+	& h2
+		font-size: 24px
+		font-weight: 400
+		line-height: 29px
+		color: #F16D7F
+		padding-top: 59px
+
+	& ul
+		display: flex
+		list-style-type: none
+		padding-top: 65px
+
+	& li:not(:last-child)::after
+		content: '/'
+		padding-left: 8px
+		padding-right: 8px
+
+	& a
+		font-weight: 300
+		font-size: 14px
+		line-height: 17px
+		color: #636363
+
+	& li:last-of-type a
+		color: #F16D7F
+
+	& a:hover
+		color: #F16D7F
+
+@import _product.sass
+
+@import _cart.sass
+
+@import _registration.sass
+
+.footer
+	margin-top: 96px
+	background-color: #222224
+
+	.footer__AdvantagesBox
+		display: flex
+		background-color: #222224
+		margin: 104px 0px
+
+		.footer__AdvantagesCard
+			width: 360px
+			min-height: 134px
+			flex-grow: 1
+			display: flex
+			flex-direction: column
+			justify-content: space-between
+			text-align: center
+
+			&:not(:last-child)
+				margin-right: 30px
+
+			& img
+				max-width: 40px
+				min-height: 40px
+				align-self: center
+
+			& h3
+				font-size: 20px
+				line-height: 24px
+				color: #FBFBFB
+
+			& p
+				font-weight: 300
+				font-size: 14px
+				line-height: 17px
+				text-align: center
+				color: #FBFBFB
+				opacity: 0.6
+				padding-left: 27px
+				padding-right: 27px
+
+	.footer__Subscribe
+		min-height: 448px
+		display: flex
+		justify-content: space-between
+		background-image: url(../img/Photo_Subscribe.jpg)
+		background-size: 100% 100%
+		padding-top: 97px
+		padding-bottom: 156px
+		text-align: center
+
+		.footer__SubscribeCard
+			flex-basis: 360px
+			display: flex
+			flex-direction: column
+			align-content: center
+			justify-content: space-around
+
+			& img
+				max-width: 96px
+				min-height: 96px
+				align-self: center
+
+			& p
+				font-size: 20px
+				line-height: 24px
+				text-align: center
+				color: #222224
+
+		.footer__SubscribeForm
+			display: flex
+			width: 360px
+			flex-direction: column
+			align-content: center
+			padding-top: 34px
+
+			& h3
+				font-size: 24px
+				line-height: 40px
+				text-align: center
+				color: #222224
+
+			& p
+				font-size: 18px
+				line-height: 30px
+				color: #222224
+				margin-bottom: 32px
+
+			& form
+				display: flex
+				align-self: center
+
+			& input
+				width: 256px
+				height: 49px
+				display: flex
+				align-items: center
+				font-size: 14px
+				line-height: 17px
+				color: #222224
+				opacity: 0.67
+				padding: 7px 64px 7px 22px
+				border-top-left-radius: 22px
+				border-bottom-left-radius: 22px
+				background: #E1E1E1
+
+			& button
+				width: 100px
+				height: 49px
+				font-size: 14px
+				line-height: 17px
+				color: #FFFFFF
+				text-align: center
+				background: #F16D7F
+				border-top-right-radius: 25px
+				border-bottom-right-radius: 25px
+				padding: 7px 15px
+				transition: background 0.3s
+
+			& button:hover
+				background: #E05C6E
+
+	.footer__Contacts
+		height: 79px
+		display: flex
+		justify-content: space-between
+
+		& p
+			align-self: center
+			font-size: 16px
+			line-height: 19px
+			color: #FBFBFB
+			opacity: 0.8
+			text-align: center
+
+		.footer__ContactsSocialNetworks
+			display: flex
+			column-gap: 7px
+
+			& div
+				align-self: center
+				width: 32px
+				height: 32px
+				background-color: #FFFFFF
+				padding: 8px
+				transition: all 0.5s
+
+			& svg
+				width: 15px
+				height: 15px
+
+			& div:hover
+				background-color: #F16D7F
+
+			& div:hover path
+				fill: #FFFFFF
+
+@import _tablet1023px.sass

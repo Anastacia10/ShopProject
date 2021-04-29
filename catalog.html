@@ -13,11 +13,11 @@
 
 <body>
     <div class="wrapper">
-        <header class="center">
-            <div class="header_left">
+        <header class="header center">
+            <div class="header__Left">
                 <a href="index.html">
-                    <svg class="Start_Page_Button" width="44" height="38" viewBox="0 0 44 38" fill="none"
-                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <svg width="44" height="38" viewBox="0 0 44 38" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
                         <rect width="44" height="38" fill="url(#pattern0)" />
                         <defs>
                             <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
@@ -28,7 +28,7 @@
                         </defs>
                     </svg>
                 </a>
-                <a href="#" class="white_Button">
+                <a href="#" class="header__WhiteButton">
                     <svg class="Search_Button" width="27" height="28" viewBox="0 0 27 28" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -37,14 +37,14 @@
                     </svg>
                 </a>
             </div>
-            <div class="header_right">
-                <a href="#" class="white_Button Menu">
+            <div class="header__Right">
+                <a href="#" class="header__WhiteButton">
                     <svg class="Menu_Button" width="32" height="23" viewBox="0 0 32 23" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <path d="M0 23V20.31H32V23H0ZM0 12.76V10.07H32V12.76H0ZM0 2.69V0H32V2.69H0Z" fill="#E8E8E8" />
                     </svg>
                 </a>
-                <a href="#" class="white_Button">
+                <a href="registration.html" class="header__WhiteButton">
                     <svg class="Account_Button" width="29" height="29" viewBox="0 0 29 29" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -52,7 +52,7 @@
                             fill="#E8E8E8" />
                     </svg>
                 </a>
-                <a href="#" class="white_Button">
+                <a href="cart.html" class="header__WhiteButton">
                     <svg class="Cart_Button" width="32" height="29" viewBox="0 0 32 29" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -63,7 +63,7 @@
             </div>
         </header>
         <main>
-            <section class="page_name center">
+            <section class="page__Name center">
                 <h2>NEW ARRIVALS </h2>
                 <ul>
                     <li>
@@ -77,63 +77,144 @@
                     </li>
                 </ul>
             </section>
-            <div class="sorting_part center">
-                <div class="filter">
-                    <details class="filter__main">
-                        <summary class="filter__main_name">
-                            FILTER 
-                            <svg width="15" height="10" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0.833333 10H4.16667C4.625 10 5 9.625 5 9.16667C5 8.70833 4.625 8.33333 4.16667 8.33333H0.833333C0.375 8.33333 0 8.70833 0 9.16667C0 9.625 0.375 10 0.833333 10ZM0 0.833333C0 1.29167 0.375 1.66667 0.833333 1.66667H14.1667C14.625 1.66667 15 1.29167 15 0.833333C15 0.375 14.625 0 14.1667 0H0.833333C0.375 0 0 0.375 0 0.833333ZM0.833333 5.83333H9.16667C9.625 5.83333 10 5.45833 10 5C10 4.54167 9.625 4.16667 9.16667 4.16667H0.833333C0.375 4.16667 0 4.54167 0 5C0 5.45833 0.375 5.83333 0.833333 5.83333Z" fill="black"/>
-                            </svg>
-                        </summary>
-                        <details class="filter__sort" open>
-                            <summary>
-                                <span>CATEGORY</span>
+            <div class="featuredItems catalog center">
+                <div class="featuredItems__SortingPart">
+                    <div class="featuredItems__FilterBox catalog">
+                        <details class="featuredItems__FilterMain">
+                            <summary class="FeaturedItems__FilterMainName">
+                                <span>FILTER</span>
+                                <svg width="15" height="10" viewBox="0 0 15 10" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0.833333 10H4.16667C4.625 10 5 9.625 5 9.16667C5 8.70833 4.625 8.33333 4.16667 8.33333H0.833333C0.375 8.33333 0 8.70833 0 9.16667C0 9.625 0.375 10 0.833333 10ZM0 0.833333C0 1.29167 0.375 1.66667 0.833333 1.66667H14.1667C14.625 1.66667 15 1.29167 15 0.833333C15 0.375 14.625 0 14.1667 0H0.833333C0.375 0 0 0.375 0 0.833333ZM0.833333 5.83333H9.16667C9.625 5.83333 10 5.45833 10 5C10 4.54167 9.625 4.16667 9.16667 4.16667H0.833333C0.375 4.16667 0 4.54167 0 5C0 5.45833 0.375 5.83333 0.833333 5.83333Z"
+                                        fill="black" />
+                                </svg>
                             </summary>
-                            <ul>
-                                <li><a href="#">Accessories</a></li>
-                                <li><a href="#">Bags</a></li>
-                                <li><a href="#">Denim</a></li>
-                                <li><a href="#">Hoodies & Sweatshirts</a></li>
-                                <li><a href="#">Jackets & Coats</a></li>
-                            </ul>
+                            <details class="featuredItems__FilterInserted" open>
+                                <summary>
+                                    <span>CATEGORY</span>
+                                </summary>
+                                <ul>
+                                    <li><a href="#">Accessories</a></li>
+                                    <li><a href="#">Bags</a></li>
+                                    <li><a href="#">Denim</a></li>
+                                    <li><a href="#">Hoodies & Sweatshirts</a></li>
+                                    <li><a href="#">Jackets & Coats</a></li>
+                                </ul>
+                            </details>
+                            <details class="featuredItems__FilterInserted">
+                                <summary>
+                                    <span>BRAND</span>
+                                </summary>
+                                <ul>
+                                    <li><a href="#">Accessories</a></li>
+                                    <li><a href="#">Bags</a></li>
+                                    <li><a href="#">Denim</a></li>
+                                    <li><a href="#">Hoodies & Sweatshirts</a></li>
+                                    <li><a href="#">Jackets & Coats</a></li>
+                                </ul>
+                            </details>
+                            <details class="featuredItems__FilterInserted">
+                                <summary>
+                                    <span>DESIGNER</span>
+                                </summary>
+                                <ul class="filter__content-ul">
+                                    <li><a href="#">Accessories</a></li>
+                                    <li><a href="#">Bags</a></li>
+                                    <li><a href="#">Denim</a></li>
+                                    <li><a href="#">Hoodies & Sweatshirts</a></li>
+                                    <li><a href="#">Jackets & Coats</a></li>
+                                </ul>
+                            </details>
                         </details>
-                        <details class="filter__sort">
+                    </div>
+                    <div class="featuredItems__Parameters">
+                        <details>
                             <summary>
-                                <span >BRAND</span></summary>
-                            <ul>
-                                <li><a href="#">Accessories</a></li>
-                                <li><a href="#">Bags</a></li>
-                                <li><a href="#">Denim</a></li>
-                                <li><a href="#">Hoodies & Sweatshirts</a></li>
-                                <li><a href="#">Jackets & Coats</a></li>
-                            </ul>
-                        </details>
-                        <details class="filter__sort">
-                            <summary>
-                                <span>DESIGNER</span>
+                                <span>TRENDING NOW</span>
+                                <svg width="10" height="5" viewBox="0 0 11 6" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M5.00214 5.00214C4.83521 5.00247 4.67343 4.94433 4.54488 4.83782L0.258102 1.2655C0.112196 1.14422 0.0204417 0.969958 0.00302325 0.781035C-0.0143952 0.592112 0.0439493 0.404007 0.165221 0.258101C0.286493 0.112196 0.460759 0.0204417 0.649682 0.00302327C0.838605 -0.0143952 1.02671 0.043949 1.17262 0.165221L5.00214 3.36602L8.83167 0.279536C8.90475 0.220188 8.98884 0.175869 9.0791 0.149125C9.16937 0.122382 9.26403 0.113741 9.35764 0.1237C9.45126 0.133659 9.54198 0.162021 9.6246 0.207156C9.70722 0.252292 9.7801 0.313311 9.83906 0.386705C9.90449 0.460167 9.95405 0.546351 9.98462 0.639855C10.0152 0.733359 10.0261 0.83217 10.0167 0.930097C10.0073 1.02802 9.97784 1.12296 9.93005 1.20895C9.88227 1.29494 9.81723 1.37013 9.73904 1.42982L5.45225 4.88068C5.32002 4.97036 5.16154 5.01312 5.00214 5.00214Z"
+                                        fill="#6F6E6E" />
+                                </svg>
                             </summary>
-                            <ul class="filter__content-ul">
-                                <li><a href="#">Accessories</a></li>
-                                <li><a href="#">Bags</a></li>
-                                <li><a href="#">Denim</a></li>
-                                <li><a href="#">Hoodies & Sweatshirts</a></li>
-                                <li><a href="#">Jackets & Coats</a></li>
-                            </ul>
                         </details>
-                    </details>
-                </div>
-            </div>
-            <div class="featured_Items center">
+                        <details>
+                            <summary open>
+                                <span>SIZE</span>
+                                <svg width="10" height="5" viewBox="0 0 11 6" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M5.00214 5.00214C4.83521 5.00247 4.67343 4.94433 4.54488 4.83782L0.258102 1.2655C0.112196 1.14422 0.0204417 0.969958 0.00302325 0.781035C-0.0143952 0.592112 0.0439493 0.404007 0.165221 0.258101C0.286493 0.112196 0.460759 0.0204417 0.649682 0.00302327C0.838605 -0.0143952 1.02671 0.043949 1.17262 0.165221L5.00214 3.36602L8.83167 0.279536C8.90475 0.220188 8.98884 0.175869 9.0791 0.149125C9.16937 0.122382 9.26403 0.113741 9.35764 0.1237C9.45126 0.133659 9.54198 0.162021 9.6246 0.207156C9.70722 0.252292 9.7801 0.313311 9.83906 0.386705C9.90449 0.460167 9.95405 0.546351 9.98462 0.639855C10.0152 0.733359 10.0261 0.83217 10.0167 0.930097C10.0073 1.02802 9.97784 1.12296 9.93005 1.20895C9.88227 1.29494 9.81723 1.37013 9.73904 1.42982L5.45225 4.88068C5.32002 4.97036 5.16154 5.01312 5.00214 5.00214Z"
+                                        fill="#6F6E6E" />
+                                </svg>
+                            </summary>
+                            <div class="featuredItems__ParametersCheckbox">
+                                <div>
+                                    <input type="checkbox" name="XS" id="sizeXS">
+                                    <label for="sizeXS">XS</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" name="S" id="sizeS">
+                                    <label for="sizeS">S</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" name="M" id="sizeM">
+                                    <label for="sizeM">M</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" name="L" id="sizeL">
+                                    <label for="sizeL">L</label>
+                                </div>
+                            </div>
+                        </details>
+                        <details>
+                            <summary>
+                                <span>PRICE</span>
+                                <svg width="10" height="5" viewBox="0 0 11 6" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M5.00214 5.00214C4.83521 5.00247 4.67343 4.94433 4.54488 4.83782L0.258102 1.2655C0.112196 1.14422 0.0204417 0.969958 0.00302325 0.781035C-0.0143952 0.592112 0.0439493 0.404007 0.165221 0.258101C0.286493 0.112196 0.460759 0.0204417 0.649682 0.00302327C0.838605 -0.0143952 1.02671 0.043949 1.17262 0.165221L5.00214 3.36602L8.83167 0.279536C8.90475 0.220188 8.98884 0.175869 9.0791 0.149125C9.16937 0.122382 9.26403 0.113741 9.35764 0.1237C9.45126 0.133659 9.54198 0.162021 9.6246 0.207156C9.70722 0.252292 9.7801 0.313311 9.83906 0.386705C9.90449 0.460167 9.95405 0.546351 9.98462 0.639855C10.0152 0.733359 10.0261 0.83217 10.0167 0.930097C10.0073 1.02802 9.97784 1.12296 9.93005 1.20895C9.88227 1.29494 9.81723 1.37013 9.73904 1.42982L5.45225 4.88068C5.32002 4.97036 5.16154 5.01312 5.00214 5.00214Z"
+                                        fill="#6F6E6E" />
+                                </svg>
+                            </summary>
+                        </details>
 
-                <div class="featured_Items_Box">
-                    <div class="card">
-                        <div class="card_img_Box">
-                            <a href="#">
+                    </div>
+                </div>
+                <div class="featuredItems__Box catalog">
+                    <div class="featuredItems__Card">
+                        <div class="featuredItems__CardPhoto">
+                            <a href="product.html">
                                 <img src="img/Card1.jpg" alt="Card">
                             </a>
-                            <a href="" class="add_to_Cart">
-                                <div class="hidden_Cart_Box">
+                            <a href="" class="featuredItems__CardHiddenButton">
+                                <div class="featuredItems__CardHiddenButtonBox">
+                                    <svg width="27" height="25" viewBox="0 0 27 25" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M21.876 22.2662C21.921 22.2549 21.9423 22.2339 21.96 22.2129C21.9678 22.2037 21.9756 22.1946 21.9835 22.1855C22.02 22.1438 22.0233 22.0553 22.0224 22.0105C22.0092 21.9044 21.9185 21.8315 21.8412 21.8315C21.8375 21.8315 21.8336 21.8317 21.8312 21.8318C21.7531 21.8372 21.6653 21.9409 21.6719 22.0625C21.6813 22.1793 21.7675 22.2662 21.8392 22.2662H21.876ZM8.21954 22.2599C8.31873 22.2599 8.39935 22.1655 8.39935 22.0496C8.39935 21.9341 8.31873 21.8401 8.21954 21.8401C8.12042 21.8401 8.03973 21.9341 8.03973 22.0496C8.03973 22.1655 8.12042 22.2599 8.21954 22.2599ZM21.9995 24.2662C21.9517 24.2662 21.8878 24.2662 21.8392 24.2662C20.7017 24.2662 19.7567 23.3545 19.6765 22.198C19.5964 20.9929 20.4937 19.9183 21.6953 19.8364C21.7441 19.8331 21.7928 19.8315 21.8412 19.8315C22.9799 19.8315 23.9413 20.7324 24.019 21.8884C24.0505 22.4915 23.8741 23.0612 23.4898 23.5012C23.1055 23.9575 22.5764 24.2177 21.9995 24.2662ZM8.21954 24.2599C7.01532 24.2599 6.03973 23.2709 6.03973 22.0496C6.03973 20.8291 7.01532 19.8401 8.21954 19.8401C9.42371 19.8401 10.3994 20.8291 10.3994 22.0496C10.3994 23.2709 9.42371 24.2599 8.21954 24.2599ZM21.1984 17.3938H9.13306C8.70013 17.3938 8.31586 17.1005 8.20331 16.6775L4.27753 2.24768H1.52173C0.993408 2.24768 0.560547 1.80859 0.560547 1.27039C0.560547 0.733032 0.993408 0.292969 1.52173 0.292969H4.99933C5.43134 0.292969 5.81561 0.586304 5.9281 1.01025L9.85394 15.4391H20.5576L24.1144 7.13379H12.2578C11.7286 7.13379 11.2957 6.69373 11.2957 6.15649C11.2957 5.61914 11.7286 5.17908 12.2578 5.17908H25.5886C25.9091 5.17908 26.2141 5.34192 26.3896 5.61914C26.566 5.89539 26.5984 6.23743 26.4697 6.547L22.0795 16.807C21.9193 17.1653 21.5827 17.3938 21.1984 17.3938Z"
+                                            fill="white" />
+                                    </svg>
+                                    <p>Add to Cart</p>
+                                </div>
+                            </a>
+                        </div>
+                        <h3>ELLERY X M'O CAPSULE</h3>
+                        <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym
+                            Ellery
+                            teams up with Moda Operandi.
+                        </p>
+                        <h3 class="Price">$52.00</h3>
+                    </div>
+                    <div class="featuredItems__Card">
+                        <div class="featuredItems__CardPhoto">
+                            <a href="product.html">
+                                <img src="img/Card2.jpg" alt="Card">
+                            </a>
+                            <a href="" class="featuredItems__CardHiddenButton">
+                                <div class="featuredItems__CardHiddenButtonBox">
                                     <svg width="27" height="25" viewBox="0 0 27 25" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -150,36 +231,13 @@
                             teams up with Moda Operandi.</p>
                         <h3 class="Price">$52.00</h3>
                     </div>
-                    <div class="card">
-                        <div class="card_img_Box">
-                            <a href="#">
-                                <img src="img/Card7.jpg" alt="Card">
-                            </a>
-                            <a href="" class="add_to_Cart">
-                                <div class="hidden_Cart_Box">
-                                    <svg width="27" height="25" viewBox="0 0 27 25" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M21.876 22.2662C21.921 22.2549 21.9423 22.2339 21.96 22.2129C21.9678 22.2037 21.9756 22.1946 21.9835 22.1855C22.02 22.1438 22.0233 22.0553 22.0224 22.0105C22.0092 21.9044 21.9185 21.8315 21.8412 21.8315C21.8375 21.8315 21.8336 21.8317 21.8312 21.8318C21.7531 21.8372 21.6653 21.9409 21.6719 22.0625C21.6813 22.1793 21.7675 22.2662 21.8392 22.2662H21.876ZM8.21954 22.2599C8.31873 22.2599 8.39935 22.1655 8.39935 22.0496C8.39935 21.9341 8.31873 21.8401 8.21954 21.8401C8.12042 21.8401 8.03973 21.9341 8.03973 22.0496C8.03973 22.1655 8.12042 22.2599 8.21954 22.2599ZM21.9995 24.2662C21.9517 24.2662 21.8878 24.2662 21.8392 24.2662C20.7017 24.2662 19.7567 23.3545 19.6765 22.198C19.5964 20.9929 20.4937 19.9183 21.6953 19.8364C21.7441 19.8331 21.7928 19.8315 21.8412 19.8315C22.9799 19.8315 23.9413 20.7324 24.019 21.8884C24.0505 22.4915 23.8741 23.0612 23.4898 23.5012C23.1055 23.9575 22.5764 24.2177 21.9995 24.2662ZM8.21954 24.2599C7.01532 24.2599 6.03973 23.2709 6.03973 22.0496C6.03973 20.8291 7.01532 19.8401 8.21954 19.8401C9.42371 19.8401 10.3994 20.8291 10.3994 22.0496C10.3994 23.2709 9.42371 24.2599 8.21954 24.2599ZM21.1984 17.3938H9.13306C8.70013 17.3938 8.31586 17.1005 8.20331 16.6775L4.27753 2.24768H1.52173C0.993408 2.24768 0.560547 1.80859 0.560547 1.27039C0.560547 0.733032 0.993408 0.292969 1.52173 0.292969H4.99933C5.43134 0.292969 5.81561 0.586304 5.9281 1.01025L9.85394 15.4391H20.5576L24.1144 7.13379H12.2578C11.7286 7.13379 11.2957 6.69373 11.2957 6.15649C11.2957 5.61914 11.7286 5.17908 12.2578 5.17908H25.5886C25.9091 5.17908 26.2141 5.34192 26.3896 5.61914C26.566 5.89539 26.5984 6.23743 26.4697 6.547L22.0795 16.807C21.9193 17.1653 21.5827 17.3938 21.1984 17.3938Z"
-                                            fill="white" />
-                                    </svg>
-                                    <p>Add to Cart</p>
-                                </div>
-                            </a>
-                        </div>
-                        <h3>ELLERY X M'O CAPSULE</h3>
-                        <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym
-                            Ellery
-                            teams up with Moda Operandi.</p>
-                        <h3 class="Price">$52.00</h3>
-                    </div>
-                    <div class="card">
-                        <div class="card_img_Box">
-                            <a href="#">
+                    <div class="featuredItems__Card">
+                        <div class="featuredItems__CardPhoto">
+                            <a href="product.html">
                                 <img src="img/Card3.jpg" alt="Card">
                             </a>
-                            <a href="" class="add_to_Cart">
-                                <div class="hidden_Cart_Box">
+                            <a href="" class="featuredItems__CardHiddenButton">
+                                <div class="featuredItems__CardHiddenButtonBox">
                                     <svg width="27" height="25" viewBox="0 0 27 25" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -196,13 +254,13 @@
                             teams up with Moda Operandi.</p>
                         <h3 class="Price">$52.00</h3>
                     </div>
-                    <div class="card">
-                        <div class="card_img_Box">
-                            <a href="#">
+                    <div class="featuredItems__Card">
+                        <div class="featuredItems__CardPhoto">
+                            <a href="product.html">
                                 <img src="img/Card4.jpg" alt="Card">
                             </a>
-                            <a href="" class="add_to_Cart">
-                                <div class="hidden_Cart_Box">
+                            <a href="" class="featuredItems__CardHiddenButton">
+                                <div class="featuredItems__CardHiddenButtonBox">
                                     <svg width="27" height="25" viewBox="0 0 27 25" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -219,13 +277,83 @@
                             teams up with Moda Operandi.</p>
                         <h3 class="Price">$52.00</h3>
                     </div>
-                    <div class="card">
-                        <div class="card_img_Box">
-                            <a href="#">
+                    <div class="featuredItems__Card">
+                        <div class="featuredItems__CardPhoto">
+                            <a href="product.html">
+                                <img src="img/Card5.jpg" alt="Card">
+                            </a>
+                            <a href="" class="featuredItems__CardHiddenButton">
+                                <div class="featuredItems__CardHiddenButtonBox">
+                                    <svg width="27" height="25" viewBox="0 0 27 25" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M21.876 22.2662C21.921 22.2549 21.9423 22.2339 21.96 22.2129C21.9678 22.2037 21.9756 22.1946 21.9835 22.1855C22.02 22.1438 22.0233 22.0553 22.0224 22.0105C22.0092 21.9044 21.9185 21.8315 21.8412 21.8315C21.8375 21.8315 21.8336 21.8317 21.8312 21.8318C21.7531 21.8372 21.6653 21.9409 21.6719 22.0625C21.6813 22.1793 21.7675 22.2662 21.8392 22.2662H21.876ZM8.21954 22.2599C8.31873 22.2599 8.39935 22.1655 8.39935 22.0496C8.39935 21.9341 8.31873 21.8401 8.21954 21.8401C8.12042 21.8401 8.03973 21.9341 8.03973 22.0496C8.03973 22.1655 8.12042 22.2599 8.21954 22.2599ZM21.9995 24.2662C21.9517 24.2662 21.8878 24.2662 21.8392 24.2662C20.7017 24.2662 19.7567 23.3545 19.6765 22.198C19.5964 20.9929 20.4937 19.9183 21.6953 19.8364C21.7441 19.8331 21.7928 19.8315 21.8412 19.8315C22.9799 19.8315 23.9413 20.7324 24.019 21.8884C24.0505 22.4915 23.8741 23.0612 23.4898 23.5012C23.1055 23.9575 22.5764 24.2177 21.9995 24.2662ZM8.21954 24.2599C7.01532 24.2599 6.03973 23.2709 6.03973 22.0496C6.03973 20.8291 7.01532 19.8401 8.21954 19.8401C9.42371 19.8401 10.3994 20.8291 10.3994 22.0496C10.3994 23.2709 9.42371 24.2599 8.21954 24.2599ZM21.1984 17.3938H9.13306C8.70013 17.3938 8.31586 17.1005 8.20331 16.6775L4.27753 2.24768H1.52173C0.993408 2.24768 0.560547 1.80859 0.560547 1.27039C0.560547 0.733032 0.993408 0.292969 1.52173 0.292969H4.99933C5.43134 0.292969 5.81561 0.586304 5.9281 1.01025L9.85394 15.4391H20.5576L24.1144 7.13379H12.2578C11.7286 7.13379 11.2957 6.69373 11.2957 6.15649C11.2957 5.61914 11.7286 5.17908 12.2578 5.17908H25.5886C25.9091 5.17908 26.2141 5.34192 26.3896 5.61914C26.566 5.89539 26.5984 6.23743 26.4697 6.547L22.0795 16.807C21.9193 17.1653 21.5827 17.3938 21.1984 17.3938Z"
+                                            fill="white" />
+                                    </svg>
+                                    <p>Add to Cart</p>
+                                </div>
+                            </a>
+                        </div>
+                        <h3>ELLERY X M'O CAPSULE</h3>
+                        <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym
+                            Ellery
+                            teams up with Moda Operandi.</p>
+                        <h3 class="Price">$52.00</h3>
+                    </div>
+                    <div class="featuredItems__Card">
+                        <div class="featuredItems__CardPhoto">
+                            <a href="product.html">
+                                <img src="img/Card6.jpg" alt="Card">
+                            </a>
+                            <a href="" class="featuredItems__CardHiddenButton">
+                                <div class="featuredItems__CardHiddenButtonBox">
+                                    <svg width="27" height="25" viewBox="0 0 27 25" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M21.876 22.2662C21.921 22.2549 21.9423 22.2339 21.96 22.2129C21.9678 22.2037 21.9756 22.1946 21.9835 22.1855C22.02 22.1438 22.0233 22.0553 22.0224 22.0105C22.0092 21.9044 21.9185 21.8315 21.8412 21.8315C21.8375 21.8315 21.8336 21.8317 21.8312 21.8318C21.7531 21.8372 21.6653 21.9409 21.6719 22.0625C21.6813 22.1793 21.7675 22.2662 21.8392 22.2662H21.876ZM8.21954 22.2599C8.31873 22.2599 8.39935 22.1655 8.39935 22.0496C8.39935 21.9341 8.31873 21.8401 8.21954 21.8401C8.12042 21.8401 8.03973 21.9341 8.03973 22.0496C8.03973 22.1655 8.12042 22.2599 8.21954 22.2599ZM21.9995 24.2662C21.9517 24.2662 21.8878 24.2662 21.8392 24.2662C20.7017 24.2662 19.7567 23.3545 19.6765 22.198C19.5964 20.9929 20.4937 19.9183 21.6953 19.8364C21.7441 19.8331 21.7928 19.8315 21.8412 19.8315C22.9799 19.8315 23.9413 20.7324 24.019 21.8884C24.0505 22.4915 23.8741 23.0612 23.4898 23.5012C23.1055 23.9575 22.5764 24.2177 21.9995 24.2662ZM8.21954 24.2599C7.01532 24.2599 6.03973 23.2709 6.03973 22.0496C6.03973 20.8291 7.01532 19.8401 8.21954 19.8401C9.42371 19.8401 10.3994 20.8291 10.3994 22.0496C10.3994 23.2709 9.42371 24.2599 8.21954 24.2599ZM21.1984 17.3938H9.13306C8.70013 17.3938 8.31586 17.1005 8.20331 16.6775L4.27753 2.24768H1.52173C0.993408 2.24768 0.560547 1.80859 0.560547 1.27039C0.560547 0.733032 0.993408 0.292969 1.52173 0.292969H4.99933C5.43134 0.292969 5.81561 0.586304 5.9281 1.01025L9.85394 15.4391H20.5576L24.1144 7.13379H12.2578C11.7286 7.13379 11.2957 6.69373 11.2957 6.15649C11.2957 5.61914 11.7286 5.17908 12.2578 5.17908H25.5886C25.9091 5.17908 26.2141 5.34192 26.3896 5.61914C26.566 5.89539 26.5984 6.23743 26.4697 6.547L22.0795 16.807C21.9193 17.1653 21.5827 17.3938 21.1984 17.3938Z"
+                                            fill="white" />
+                                    </svg>
+                                    <p>Add to Cart</p>
+                                </div>
+                            </a>
+                        </div>
+                        <h3>ELLERY X M'O CAPSULE</h3>
+                        <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym
+                            Ellery
+                            teams up with Moda Operandi.</p>
+                        <h3 class="Price">$52.00</h3>
+                    </div>
+                    <div class="featuredItems__Card">
+                        <div class="featuredItems__CardPhoto">
+                            <a href="product.html">
+                                <img src="img/Card7.jpg" alt="Card">
+                            </a>
+                            <a href="" class="featuredItems__CardHiddenButton">
+                                <div class="featuredItems__CardHiddenButtonBox">
+                                    <svg width="27" height="25" viewBox="0 0 27 25" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M21.876 22.2662C21.921 22.2549 21.9423 22.2339 21.96 22.2129C21.9678 22.2037 21.9756 22.1946 21.9835 22.1855C22.02 22.1438 22.0233 22.0553 22.0224 22.0105C22.0092 21.9044 21.9185 21.8315 21.8412 21.8315C21.8375 21.8315 21.8336 21.8317 21.8312 21.8318C21.7531 21.8372 21.6653 21.9409 21.6719 22.0625C21.6813 22.1793 21.7675 22.2662 21.8392 22.2662H21.876ZM8.21954 22.2599C8.31873 22.2599 8.39935 22.1655 8.39935 22.0496C8.39935 21.9341 8.31873 21.8401 8.21954 21.8401C8.12042 21.8401 8.03973 21.9341 8.03973 22.0496C8.03973 22.1655 8.12042 22.2599 8.21954 22.2599ZM21.9995 24.2662C21.9517 24.2662 21.8878 24.2662 21.8392 24.2662C20.7017 24.2662 19.7567 23.3545 19.6765 22.198C19.5964 20.9929 20.4937 19.9183 21.6953 19.8364C21.7441 19.8331 21.7928 19.8315 21.8412 19.8315C22.9799 19.8315 23.9413 20.7324 24.019 21.8884C24.0505 22.4915 23.8741 23.0612 23.4898 23.5012C23.1055 23.9575 22.5764 24.2177 21.9995 24.2662ZM8.21954 24.2599C7.01532 24.2599 6.03973 23.2709 6.03973 22.0496C6.03973 20.8291 7.01532 19.8401 8.21954 19.8401C9.42371 19.8401 10.3994 20.8291 10.3994 22.0496C10.3994 23.2709 9.42371 24.2599 8.21954 24.2599ZM21.1984 17.3938H9.13306C8.70013 17.3938 8.31586 17.1005 8.20331 16.6775L4.27753 2.24768H1.52173C0.993408 2.24768 0.560547 1.80859 0.560547 1.27039C0.560547 0.733032 0.993408 0.292969 1.52173 0.292969H4.99933C5.43134 0.292969 5.81561 0.586304 5.9281 1.01025L9.85394 15.4391H20.5576L24.1144 7.13379H12.2578C11.7286 7.13379 11.2957 6.69373 11.2957 6.15649C11.2957 5.61914 11.7286 5.17908 12.2578 5.17908H25.5886C25.9091 5.17908 26.2141 5.34192 26.3896 5.61914C26.566 5.89539 26.5984 6.23743 26.4697 6.547L22.0795 16.807C21.9193 17.1653 21.5827 17.3938 21.1984 17.3938Z"
+                                            fill="white" />
+                                    </svg>
+                                    <p>Add to Cart</p>
+                                </div>
+                            </a>
+                        </div>
+                        <h3>ELLERY X M'O CAPSULE</h3>
+                        <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym
+                            Ellery
+                            teams up with Moda Operandi.
+                        </p>
+                        <h3 class="Price">$52.00</h3>
+                    </div>
+                    <div class="featuredItems__Card">
+                        <div class="featuredItems__CardPhoto">
+                            <a href="product.html">
                                 <img src="img/Card8.jpg" alt="Card">
                             </a>
-                            <a href="" class="add_to_Cart">
-                                <div class="hidden_Cart_Box">
+                            <a href="" class="featuredItems__CardHiddenButton">
+                                <div class="featuredItems__CardHiddenButtonBox">
                                     <svg width="27" height="25" viewBox="0 0 27 25" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -242,82 +370,13 @@
                             teams up with Moda Operandi.</p>
                         <h3 class="Price">$52.00</h3>
                     </div>
-                    <div class="card">
-                        <div class="card_img_Box">
-                            <a href="#">
-                                <img src="img/Card10.jpg" alt="Card">
+                    <div class="featuredItems__Card">
+                        <div class="featuredItems__CardPhoto">
+                            <a href="product.html">
+                                <img src="img/Card9.jpg" alt="Card">
                             </a>
-                            <a href="" class="add_to_Cart">
-                                <div class="hidden_Cart_Box">
-                                    <svg width="27" height="25" viewBox="0 0 27 25" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M21.876 22.2662C21.921 22.2549 21.9423 22.2339 21.96 22.2129C21.9678 22.2037 21.9756 22.1946 21.9835 22.1855C22.02 22.1438 22.0233 22.0553 22.0224 22.0105C22.0092 21.9044 21.9185 21.8315 21.8412 21.8315C21.8375 21.8315 21.8336 21.8317 21.8312 21.8318C21.7531 21.8372 21.6653 21.9409 21.6719 22.0625C21.6813 22.1793 21.7675 22.2662 21.8392 22.2662H21.876ZM8.21954 22.2599C8.31873 22.2599 8.39935 22.1655 8.39935 22.0496C8.39935 21.9341 8.31873 21.8401 8.21954 21.8401C8.12042 21.8401 8.03973 21.9341 8.03973 22.0496C8.03973 22.1655 8.12042 22.2599 8.21954 22.2599ZM21.9995 24.2662C21.9517 24.2662 21.8878 24.2662 21.8392 24.2662C20.7017 24.2662 19.7567 23.3545 19.6765 22.198C19.5964 20.9929 20.4937 19.9183 21.6953 19.8364C21.7441 19.8331 21.7928 19.8315 21.8412 19.8315C22.9799 19.8315 23.9413 20.7324 24.019 21.8884C24.0505 22.4915 23.8741 23.0612 23.4898 23.5012C23.1055 23.9575 22.5764 24.2177 21.9995 24.2662ZM8.21954 24.2599C7.01532 24.2599 6.03973 23.2709 6.03973 22.0496C6.03973 20.8291 7.01532 19.8401 8.21954 19.8401C9.42371 19.8401 10.3994 20.8291 10.3994 22.0496C10.3994 23.2709 9.42371 24.2599 8.21954 24.2599ZM21.1984 17.3938H9.13306C8.70013 17.3938 8.31586 17.1005 8.20331 16.6775L4.27753 2.24768H1.52173C0.993408 2.24768 0.560547 1.80859 0.560547 1.27039C0.560547 0.733032 0.993408 0.292969 1.52173 0.292969H4.99933C5.43134 0.292969 5.81561 0.586304 5.9281 1.01025L9.85394 15.4391H20.5576L24.1144 7.13379H12.2578C11.7286 7.13379 11.2957 6.69373 11.2957 6.15649C11.2957 5.61914 11.7286 5.17908 12.2578 5.17908H25.5886C25.9091 5.17908 26.2141 5.34192 26.3896 5.61914C26.566 5.89539 26.5984 6.23743 26.4697 6.547L22.0795 16.807C21.9193 17.1653 21.5827 17.3938 21.1984 17.3938Z"
-                                            fill="white" />
-                                    </svg>
-                                    <p>Add to Cart</p>
-                                </div>
-                            </a>
-                        </div>
-                        <h3>ELLERY X M'O CAPSULE</h3>
-                        <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym
-                            Ellery
-                            teams up with Moda Operandi.</p>
-                        <h3 class="Price">$52.00</h3>
-                    </div>
-                    <div class="card">
-                        <div class="card_img_Box">
-                            <a href="#">
-                                <img src="img/Card10.jpg" alt="Card">
-                            </a>
-                            <a href="" class="add_to_Cart">
-                                <div class="hidden_Cart_Box">
-                                    <svg width="27" height="25" viewBox="0 0 27 25" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M21.876 22.2662C21.921 22.2549 21.9423 22.2339 21.96 22.2129C21.9678 22.2037 21.9756 22.1946 21.9835 22.1855C22.02 22.1438 22.0233 22.0553 22.0224 22.0105C22.0092 21.9044 21.9185 21.8315 21.8412 21.8315C21.8375 21.8315 21.8336 21.8317 21.8312 21.8318C21.7531 21.8372 21.6653 21.9409 21.6719 22.0625C21.6813 22.1793 21.7675 22.2662 21.8392 22.2662H21.876ZM8.21954 22.2599C8.31873 22.2599 8.39935 22.1655 8.39935 22.0496C8.39935 21.9341 8.31873 21.8401 8.21954 21.8401C8.12042 21.8401 8.03973 21.9341 8.03973 22.0496C8.03973 22.1655 8.12042 22.2599 8.21954 22.2599ZM21.9995 24.2662C21.9517 24.2662 21.8878 24.2662 21.8392 24.2662C20.7017 24.2662 19.7567 23.3545 19.6765 22.198C19.5964 20.9929 20.4937 19.9183 21.6953 19.8364C21.7441 19.8331 21.7928 19.8315 21.8412 19.8315C22.9799 19.8315 23.9413 20.7324 24.019 21.8884C24.0505 22.4915 23.8741 23.0612 23.4898 23.5012C23.1055 23.9575 22.5764 24.2177 21.9995 24.2662ZM8.21954 24.2599C7.01532 24.2599 6.03973 23.2709 6.03973 22.0496C6.03973 20.8291 7.01532 19.8401 8.21954 19.8401C9.42371 19.8401 10.3994 20.8291 10.3994 22.0496C10.3994 23.2709 9.42371 24.2599 8.21954 24.2599ZM21.1984 17.3938H9.13306C8.70013 17.3938 8.31586 17.1005 8.20331 16.6775L4.27753 2.24768H1.52173C0.993408 2.24768 0.560547 1.80859 0.560547 1.27039C0.560547 0.733032 0.993408 0.292969 1.52173 0.292969H4.99933C5.43134 0.292969 5.81561 0.586304 5.9281 1.01025L9.85394 15.4391H20.5576L24.1144 7.13379H12.2578C11.7286 7.13379 11.2957 6.69373 11.2957 6.15649C11.2957 5.61914 11.7286 5.17908 12.2578 5.17908H25.5886C25.9091 5.17908 26.2141 5.34192 26.3896 5.61914C26.566 5.89539 26.5984 6.23743 26.4697 6.547L22.0795 16.807C21.9193 17.1653 21.5827 17.3938 21.1984 17.3938Z"
-                                            fill="white" />
-                                    </svg>
-                                    <p>Add to Cart</p>
-                                </div>
-                            </a>
-                        </div>
-                        <h3>ELLERY X M'O CAPSULE</h3>
-                        <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym
-                            Ellery
-                            teams up with Moda Operandi.</p>
-                        <h3 class="Price">$52.00</h3>
-                    </div>
-                    <div class="card">
-                        <div class="card_img_Box">
-                            <a href="#">
-                                <img src="img/Card11.jpg" alt="Card">
-                            </a>
-                            <a href="" class="add_to_Cart">
-                                <div class="hidden_Cart_Box">
-                                    <svg width="27" height="25" viewBox="0 0 27 25" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M21.876 22.2662C21.921 22.2549 21.9423 22.2339 21.96 22.2129C21.9678 22.2037 21.9756 22.1946 21.9835 22.1855C22.02 22.1438 22.0233 22.0553 22.0224 22.0105C22.0092 21.9044 21.9185 21.8315 21.8412 21.8315C21.8375 21.8315 21.8336 21.8317 21.8312 21.8318C21.7531 21.8372 21.6653 21.9409 21.6719 22.0625C21.6813 22.1793 21.7675 22.2662 21.8392 22.2662H21.876ZM8.21954 22.2599C8.31873 22.2599 8.39935 22.1655 8.39935 22.0496C8.39935 21.9341 8.31873 21.8401 8.21954 21.8401C8.12042 21.8401 8.03973 21.9341 8.03973 22.0496C8.03973 22.1655 8.12042 22.2599 8.21954 22.2599ZM21.9995 24.2662C21.9517 24.2662 21.8878 24.2662 21.8392 24.2662C20.7017 24.2662 19.7567 23.3545 19.6765 22.198C19.5964 20.9929 20.4937 19.9183 21.6953 19.8364C21.7441 19.8331 21.7928 19.8315 21.8412 19.8315C22.9799 19.8315 23.9413 20.7324 24.019 21.8884C24.0505 22.4915 23.8741 23.0612 23.4898 23.5012C23.1055 23.9575 22.5764 24.2177 21.9995 24.2662ZM8.21954 24.2599C7.01532 24.2599 6.03973 23.2709 6.03973 22.0496C6.03973 20.8291 7.01532 19.8401 8.21954 19.8401C9.42371 19.8401 10.3994 20.8291 10.3994 22.0496C10.3994 23.2709 9.42371 24.2599 8.21954 24.2599ZM21.1984 17.3938H9.13306C8.70013 17.3938 8.31586 17.1005 8.20331 16.6775L4.27753 2.24768H1.52173C0.993408 2.24768 0.560547 1.80859 0.560547 1.27039C0.560547 0.733032 0.993408 0.292969 1.52173 0.292969H4.99933C5.43134 0.292969 5.81561 0.586304 5.9281 1.01025L9.85394 15.4391H20.5576L24.1144 7.13379H12.2578C11.7286 7.13379 11.2957 6.69373 11.2957 6.15649C11.2957 5.61914 11.7286 5.17908 12.2578 5.17908H25.5886C25.9091 5.17908 26.2141 5.34192 26.3896 5.61914C26.566 5.89539 26.5984 6.23743 26.4697 6.547L22.0795 16.807C21.9193 17.1653 21.5827 17.3938 21.1984 17.3938Z"
-                                            fill="white" />
-                                    </svg>
-                                    <p>Add to Cart</p>
-                                </div>
-                            </a>
-                        </div>
-                        <h3>ELLERY X M'O CAPSULE</h3>
-                        <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym
-                            Ellery
-                            teams up with Moda Operandi.</p>
-                        <h3 class="Price">$52.00</h3>
-                    </div>
-                    <div class="card">
-                        <div class="card_img_Box">
-                            <a href="#">
-                                <img src="img/Card12.jpg" alt="Card">
-                            </a>
-                            <a href="" class="add_to_Cart">
-                                <div class="hidden_Cart_Box">
+                            <a href="" class="featuredItems__CardHiddenButton">
+                                <div class="featuredItems__CardHiddenButtonBox">
                                     <svg width="27" height="25" viewBox="0 0 27 25" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -335,7 +394,7 @@
                         <h3 class="Price">$52.00</h3>
                     </div>
                 </div>
-                <div class="pages_box center">
+                <div class="featuredItems__Pagination center">
                     <a href="">
                         <svg width="8" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M8.995 2L3.995 7L8.995 12L7.995 14L0.994995 7L7.995 0L8.995 2Z" fill="black" />
@@ -359,33 +418,33 @@
                 </div>
             </div>
         </main>
-        <footer>
-            <div class="advantages_Box center">
-                <div class="advantages_Card">
+        <footer class="footer">
+            <div class="footer__AdvantagesBox center">
+                <div class="footer__AdvantagesCard">
                     <img src="img/Car.svg" alt="Free Delivery">
                     <h3>Free Delivery</h3>
                     <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive
                         models.</p>
                 </div>
-                <div class="advantages_Card second">
+                <div class="footer__AdvantagesCard">
                     <img src="img/Discount.svg" alt="Sales & discounts">
                     <h3>Sales & discounts</h3>
                     <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive
                         models.</p>
                 </div>
-                <div class="advantages_Card">
+                <div class="footer__AdvantagesCard">
                     <img src="img/Crown.svg" alt="Quality assurance">
                     <h3>Quality assurance</h3>
                     <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive
                         models.</p>
                 </div>
             </div>
-            <div class="footer_subscribe center">
-                <div class="footer_Card">
+            <div class="footer__Subscribe center">
+                <div class="footer__SubscribeCard">
                     <img src="img/SmileWoman.png" alt="Girl">
                     <p>“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum“</p>
                 </div>
-                <div class="footer_form">
+                <div class="footer__SubscribeForm">
                     <h3>SUBSCRIBE</h3>
                     <p>FOR OUR NEWLETTER AND PROMOTION </p>
                     <form action="#" method="get">
@@ -394,9 +453,9 @@
                     </form>
                 </div>
             </div>
-            <div class="footer_contacts center">
-                <p class="footer_copyright">© 2021 Brand All Rights Reserved.</p>
-                <div class="footer_socialNetwork">
+            <div class="footer__Contacts center">
+                <p>© 2021 Brand All Rights Reserved.</p>
+                <div class="footer__ContactsSocialNetworks">
                     <div>
                         <a href="#">
                             <svg width="9" height="15" viewBox="0 0 9 15" fill="none"
@@ -439,10 +498,7 @@
                     </div>
                 </div>
             </div>
-
         </footer>
     </div>
-    </div>
 </body>
-
 </html>
