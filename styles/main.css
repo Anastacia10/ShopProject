@@ -55,10 +55,8 @@ summary::-webkit-details-marker {
 
 .header {
   position: relative;
+  background: #222222;
   height: 75px;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -68,35 +66,40 @@ summary::-webkit-details-marker {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #222222;
 }
 
-.header__Left a:not(:last-child) {
-  margin-right: 41px;
+.header__right, .header__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 33px;
+          column-gap: 33px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.header__Right a:not(:last-child) {
-  margin-right: 33px;
+.header__links_mob {
+  display: none;
 }
 
-.header svg {
-  -webkit-transition: all 0.1s;
-  transition: all 0.1s;
+.header__search {
+  margin-left: 41px;
 }
 
-.header svg:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+#switcher {
+  display: none;
 }
 
-.header__WhiteButton:hover path {
-  fill: #F16D7F;
+#switcher:checked ~ .nav {
+  display: block;
 }
 
-nav {
+.nav {
   position: absolute;
   top: 75px;
   right: 0px;
+  display: none;
   width: 232px;
   height: 764px;
   padding-top: 16px;
@@ -107,11 +110,11 @@ nav {
   z-index: 1;
 }
 
-nav div {
+.nav div {
   position: relative;
 }
 
-nav img {
+.nav img {
   position: absolute;
   top: 0px;
   right: 17px;
@@ -119,7 +122,7 @@ nav img {
   height: 12px;
 }
 
-nav h2 {
+.nav h2 {
   font-size: 14px;
   line-height: 17px;
   color: #000000;
@@ -127,7 +130,7 @@ nav h2 {
   margin-bottom: 24px;
 }
 
-nav h3 {
+.nav h3 {
   font-size: 14px;
   line-height: 17px;
   color: #F16D7F;
@@ -135,17 +138,13 @@ nav h3 {
   margin-top: 20px;
 }
 
-nav li {
+.nav li {
   font-size: 14px;
   line-height: 17px;
   color: #6F6E6E;
   list-style-type: none;
   padding-left: 21px;
   margin-bottom: 11px;
-}
-
-#hiddenMenu:checked nav {
-  right: -232px;
 }
 
 .promo {

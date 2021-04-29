@@ -36,32 +36,36 @@ summary::-webkit-details-marker
 
 .header
 	position: relative
+	background: #222222
 	height: 75px
-	flex-grow: 1
 	display: flex
 	justify-content: space-between
 	align-items: center
-	background-color: #222222
 
-	&__Left a:not(:last-child)
-		margin-right: 41px
+	&__right
+		display: flex
+		column-gap: 33px
+		align-items: center
 
-	&__Right a:not(:last-child)
-		margin-right: 33px
+	&__links
+		@extend .header__right
+		&_mob
+			display: none
 
-	& svg
-		transition: all 0.1s
+	&__search
+		margin-left: 41px
 
-	& svg:hover
-		transform: scale(1.05)
+#switcher
+	display: none
 
-	&__WhiteButton:hover path
-		fill: #F16D7F
+	&:checked ~ .nav
+		display: block
 
-nav
+.nav
 	position: absolute
 	top: 75px
 	right: 0px
+	display: none
 	width: 232px
 	height: 764px
 	padding-top: 16px
@@ -101,10 +105,6 @@ nav
 		list-style-type: none
 		padding-left: 21px
 		margin-bottom: 11px
-
-#hiddenMenu:checked
-	nav
-		right: -232px
 
 .promo
 	display: flex
