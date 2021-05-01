@@ -68,7 +68,26 @@ summary::-webkit-details-marker {
           align-items: center;
 }
 
-.header__right, .header__links {
+.header .header__Left a svg {
+  -webkit-transition: scale 0.4s;
+  transition: scale 0.4s;
+}
+
+.header .header__Left a:hover svg {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.header .header__Left a path {
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.header .header__Left a:hover path {
+  fill: #F16D7F;
+}
+
+.header .header__Right, .header .header__Links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -79,26 +98,61 @@ summary::-webkit-details-marker {
           align-items: center;
 }
 
-.header__links_mob {
-  display: none;
+.header .header__Right .Menu svg, .header .header__Links .Menu svg {
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
 }
 
-.header__search {
+.header .header__Right .Menu:hover svg, .header .header__Links .Menu:hover svg {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  cursor: pointer;
+}
+
+.header .header__Right .Menu:hover svg path, .header .header__Links .Menu:hover svg path {
+  fill: #F16D7F;
+}
+
+.header .header__Links a svg {
+  -webkit-transition: scale 0.4s;
+  transition: scale 0.4s;
+}
+
+.header .header__Links a:hover svg {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.header .header__Links a path {
+  -webkit-transition: fill 0.4s;
+  transition: fill 0.4s;
+}
+
+.header .header__Links a:hover path {
+  fill: #F16D7F;
+}
+
+.header_Search {
   margin-left: 41px;
 }
 
-#switcher {
+#Switcher {
   display: none;
 }
 
-#switcher:checked ~ .nav {
+#Switcher:checked ~ .nav {
   display: block;
+  right: 0px;
+}
+
+#Switcher:checked ~ .Menu path {
+  fill: #F16D7F;
 }
 
 .nav {
   position: absolute;
   top: 75px;
-  right: 0px;
+  right: -232px;
   display: none;
   width: 232px;
   height: 764px;
@@ -108,6 +162,8 @@ summary::-webkit-details-marker {
   -webkit-box-shadow: 0 0px 3px;
           box-shadow: 0 0px 3px;
   z-index: 1;
+  -webkit-transition: right 0.8s;
+  transition: right 0.8s;
 }
 
 .nav div {
@@ -143,8 +199,31 @@ summary::-webkit-details-marker {
   line-height: 17px;
   color: #6F6E6E;
   list-style-type: none;
+  -webkit-transition: color 0.4s;
+  transition: color 0.4s;
+  list-style-type: none;
   padding-left: 21px;
   margin-bottom: 11px;
+}
+
+.nav a {
+  font-size: 14px;
+  line-height: 17px;
+  color: #6F6E6E;
+  -webkit-transition: color 0.4s;
+  transition: color 0.4s;
+}
+
+.nav .header__Links_mob {
+  display: none;
+}
+
+.nav li:hover a {
+  color: #f16d7f;
+}
+
+.nav .header__Links_mob {
+  display: none;
 }
 
 .promo {
@@ -220,10 +299,10 @@ summary::-webkit-details-marker {
 
 .sale__Item {
   position: relative;
-  -webkit-transition: -webkit-transform 0.3s;
-  transition: -webkit-transform 0.3s;
-  transition: transform 0.3s;
-  transition: transform 0.3s, -webkit-transform 0.3s;
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+  transition: transform 0.4s, -webkit-transform 0.4s;
 }
 
 .sale__Item:hover {
@@ -610,27 +689,35 @@ summary::-webkit-details-marker {
 }
 
 .featuredItems .featuredItems__ButtonBrowse {
-  display: block;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-}
-
-.featuredItems .featuredItems__ButtonBrowse button {
-  font-size: 16px;
-  line-height: 19px;
-  color: #F26376;
-  padding: 14px 38px;
+  width: 211px;
+  height: 48px;
   border: 1px solid #FF6A6A;
   margin-top: 48px;
   background-color: #FFFFFF;
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
+  text-align: center;
+  vertical-align: center;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  padding-top: 14px;
 }
 
-.featuredItems .featuredItems__ButtonBrowse button:hover {
-  color: #FFFFFF;
+.featuredItems .featuredItems__ButtonBrowse a {
+  display: block;
+  font-size: 16px;
+  line-height: 19px;
+  color: #F26376;
+}
+
+.featuredItems .featuredItems__ButtonBrowse:hover {
+  cursor: pointer;
   background-color: #F26376;
+}
+
+.featuredItems .featuredItems__ButtonBrowse:hover a {
+  color: #FFFFFF;
 }
 
 .page__Name {
@@ -731,7 +818,7 @@ summary::-webkit-details-marker {
   height: 100%;
 }
 
-.productCard .productCard__Arrow .productCard__Arrow:hover path {
+.productCard .productCard__Arrow:hover div path {
   fill: #F16D7F;
 }
 
@@ -1015,6 +1102,13 @@ summary::-webkit-details-marker {
   transition: background 0.4s;
 }
 
+.cart .shoppingList .shoppingList__Buttons .cart__Button a {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+}
+
 .cart .shoppingList .shoppingList__Buttons .cart__Button:hover {
   background: #E2E2E2;
 }
@@ -1040,6 +1134,7 @@ summary::-webkit-details-marker {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-bottom: 57px;
+  outline: none;
 }
 
 .cart .checkoutForm .checkoutForm__ShippingAddress h3 {
@@ -1059,6 +1154,7 @@ summary::-webkit-details-marker {
   vertical-align: center;
   background-color: #FFFFFF;
   padding-left: 16px;
+  padding-right: 16px;
   border: 1px solid #A4A4A4;
   margin-bottom: 21px;
 }
@@ -1212,6 +1308,7 @@ summary::-webkit-details-marker {
   line-height: 16px;
   color: #B1B1B1;
   padding-left: 17px;
+  padding-right: 17px;
 }
 
 .registration .registration__Form .registration__YourName input:not(:last-child) {
@@ -1281,6 +1378,7 @@ summary::-webkit-details-marker {
   line-height: 16px;
   color: #B1B1B1;
   padding-left: 17px;
+  padding-right: 17px;
 }
 
 .registration .registration__Form .registration__LoginDetails input:not(:last-of-type) {
@@ -1369,9 +1467,6 @@ summary::-webkit-details-marker {
 .footer .footer__AdvantagesBox .footer__AdvantagesCard {
   width: 360px;
   min-height: 134px;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1379,9 +1474,6 @@ summary::-webkit-details-marker {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   text-align: center;
 }
 
@@ -1395,12 +1487,14 @@ summary::-webkit-details-marker {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  margin-bottom: 19px;
 }
 
 .footer .footer__AdvantagesBox .footer__AdvantagesCard h3 {
   font-size: 20px;
   line-height: 24px;
   color: #FBFBFB;
+  margin-bottom: 16px;
 }
 
 .footer .footer__AdvantagesBox .footer__AdvantagesCard p {
@@ -1513,6 +1607,7 @@ summary::-webkit-details-marker {
   border-top-left-radius: 22px;
   border-bottom-left-radius: 22px;
   background: #E1E1E1;
+  outline: none;
 }
 
 .footer .footer__Subscribe .footer__SubscribeForm button {
@@ -1526,8 +1621,8 @@ summary::-webkit-details-marker {
   border-top-right-radius: 25px;
   border-bottom-right-radius: 25px;
   padding: 7px 15px;
-  -webkit-transition: background 0.3s;
-  transition: background 0.3s;
+  -webkit-transition: background 0.4s;
+  transition: background 0.4s;
 }
 
 .footer .footer__Subscribe .footer__SubscribeForm button:hover {

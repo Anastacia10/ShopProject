@@ -42,29 +42,66 @@ summary::-webkit-details-marker
 	justify-content: space-between
 	align-items: center
 
-	&__right
+	.header__Left
+		& a svg
+			transition: scale 0.4s
+
+		& a:hover svg
+			transform: scale(1.05)
+
+		& a path
+			transition: all 0.4s
+
+		& a:hover path
+			fill: #F16D7F
+
+	.header__Right
 		display: flex
 		column-gap: 33px
 		align-items: center
 
-	&__links
-		@extend .header__right
-		&_mob
-			display: none
+		& .Menu svg
+			transition: all 0.4s
 
-	&__search
+		& .Menu:hover svg
+			transform: scale(1.05)
+			cursor: pointer
+
+		& .Menu:hover svg path
+			fill: #F16D7F
+
+	.header__Links
+		@extend .header__Right
+
+		& a svg
+			transition: scale 0.4s
+
+		& a:hover svg
+			transform: scale(1.05)
+
+		& a path
+			transition: fill 0.4s
+
+		& a:hover path
+			fill: #F16D7F
+
+	&_Search
 		margin-left: 41px
 
-#switcher
+#Switcher
 	display: none
 
 	&:checked ~ .nav
 		display: block
+		right: 0px
+
+	&:checked ~ .Menu path
+		fill: #F16D7F
 
 .nav
 	position: absolute
 	top: 75px
-	right: 0px
+	right: -232px
 	display: none
 	width: 232px
 	height: 764px
@@ -73,6 +110,7 @@ summary::-webkit-details-marker
 	background-color: #FFFFFF
 	box-shadow: 0 0px 3px
 	z-index: 1
+	transition: right 0.8s
 
 	& div
 		position: relative
@@ -103,8 +141,25 @@ summary::-webkit-details-marker
 		line-height: 17px
 		color: #6F6E6E
 		list-style-type: none
+		transition: color 0.4s
+		list-style-type: none
 		padding-left: 21px
 		margin-bottom: 11px
+
+	& a
+		font-size: 14px
+		line-height: 17px
+		color: #6F6E6E
+		transition: color 0.4s
+
+	.header__Links_mob
+		display: none
+
+	& li:hover a
+		color: #f16d7f
+
+	.header__Links_mob
+		display: none
 
 .promo
 	display: flex
@@ -160,7 +215,7 @@ summary::-webkit-details-marker
 
 	&__Item
 		position: relative
-		transition: transform 0.3s
+		transition: transform 0.4s
 
 	&__Item:hover
 		transform: scale(1.03)
@@ -437,22 +492,29 @@ summary::-webkit-details-marker
 			color: #F16D7F
 
 	.featuredItems__ButtonBrowse
-		display: block
 		align-self: center
+		width: 211px
+		height: 48px
+		border: 1px solid #FF6A6A
+		margin-top: 48px
+		background-color: #FFFFFF
+		text-align: center
+		vertical-align: center
+		transition: all 0.5s
+		padding-top: 14px
 
-		& button
+		& a
+			display: block
 			font-size: 16px
 			line-height: 19px
 			color: #F26376
-			padding: 14px 38px
-			border: 1px solid #FF6A6A
-			margin-top: 48px
-			background-color: #FFFFFF
-			transition: all 0.4s
 
-		& button:hover
-			color: #FFFFFF
+		&:hover
+			cursor: pointer
 			background-color: #F26376
+
+		&:hover a
+			color: #FFFFFF
 
 .page__Name
 	height: 148px
@@ -508,10 +570,8 @@ summary::-webkit-details-marker
 		.footer__AdvantagesCard
 			width: 360px
 			min-height: 134px
-			flex-grow: 1
 			display: flex
 			flex-direction: column
-			justify-content: space-between
 			text-align: center
 
 			&:not(:last-child)
@@ -521,11 +581,13 @@ summary::-webkit-details-marker
 				max-width: 40px
 				min-height: 40px
 				align-self: center
+				margin-bottom: 19px
 
 			& h3
 				font-size: 20px
 				line-height: 24px
 				color: #FBFBFB
+				margin-bottom: 16px
 
 			& p
 				font-weight: 300
@@ -601,6 +663,7 @@ summary::-webkit-details-marker
 				border-top-left-radius: 22px
 				border-bottom-left-radius: 22px
 				background: #E1E1E1
+				outline: none
 
 			& button
 				width: 100px
@@ -613,7 +676,7 @@ summary::-webkit-details-marker
 				border-top-right-radius: 25px
 				border-bottom-right-radius: 25px
 				padding: 7px 15px
-				transition: background 0.3s
+				transition: background 0.4s
 
 			& button:hover
 				background: #E05C6E
