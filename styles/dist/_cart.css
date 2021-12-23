@@ -1,0 +1,195 @@
+.cart {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 96px;
+  margin-bottom: 32px;
+}
+.cart .shoppingList .shoppingList__Box {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 72px;
+}
+.cart .shoppingList .shoppingList__Box .shoppingList__Card {
+  max-width: 652px;
+  height: 306px;
+  display: flex;
+  background-color: #FFFFFF;
+  margin-bottom: 40px;
+  filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13));
+}
+.cart .shoppingList .shoppingList__Box .shoppingList__Card input {
+  width: 44px;
+  height: 25px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 22px;
+  color: #656565;
+  border: 1px solid #EAEAEA;
+  margin-left: 24px;
+}
+.cart .shoppingList .shoppingList__Box .shoppingList__Card p {
+  font-size: 22px;
+  line-height: 26px;
+  color: #575757;
+  margin-bottom: 6px;
+}
+.cart .shoppingList .shoppingList__Box .shoppingList__Card img {
+  width: 262px;
+  height: 100%;
+}
+.cart .shoppingList .shoppingList__Box .shoppingList__Card .shoppingList__Information {
+  width: 390px;
+  display: flex;
+  flex-direction: column;
+  padding: 22px 22px 62px 31px;
+}
+.cart .shoppingList .shoppingList__Box .shoppingList__Card .shoppingList__Information .shoppingList__InformationHeading {
+  display: flex;
+  justify-content: space-between;
+}
+.cart .shoppingList .shoppingList__Box .shoppingList__Card .shoppingList__Information .shoppingList__InformationHeading a:first-of-type {
+  width: 195px;
+  font-size: 24px;
+  line-height: 29px;
+  color: #222222;
+  margin-bottom: 42px;
+  transition: fill 0.5s;
+}
+.cart .shoppingList .shoppingList__Box .shoppingList__Card .shoppingList__Information .shoppingList__InformationHeading a:last-of-type:hover path {
+  fill: #F16D7F;
+}
+.cart .shoppingList .shoppingList__Box .shoppingList__Card .shoppingList__Information .shoppingList__InformationProduct {
+  display: flex;
+}
+.cart .shoppingList .shoppingList__Box .shoppingList__Card .shoppingList__Information .shoppingList__InformationProduct p:nth-of-type(2) {
+  padding-left: 10px;
+}
+.cart .shoppingList .shoppingList__Box .shoppingList__Card .shoppingList__Information .shoppingList__InformationProduct .finalPrice {
+  color: #F16D7F;
+}
+.cart .shoppingList .shoppingList__Box .shoppingList__Card .shoppingList__Information .shoppingList__InformationQuantity {
+  display: flex;
+}
+.cart .shoppingList .shoppingList__Buttons {
+  display: flex;
+  justify-content: space-between;
+}
+.cart .shoppingList .shoppingList__Buttons .cart__Button {
+  height: 50px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  text-align: center;
+  background: #FFFFFF;
+  border: 1px solid #A4A4A4;
+  padding: 17px 39px 16px;
+  transition: background 0.4s;
+}
+.cart .shoppingList .shoppingList__Buttons .cart__Button a {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+}
+.cart .shoppingList .shoppingList__Buttons .cart__Button:hover {
+  background: #E2E2E2;
+}
+.cart .checkoutForm {
+  padding-top: 17px;
+  display: flex;
+  flex-direction: column;
+}
+.cart .checkoutForm .checkoutForm__ShippingAddress {
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 57px;
+  outline: none;
+}
+.cart .checkoutForm .checkoutForm__ShippingAddress h3 {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+  margin-bottom: 21px;
+}
+.cart .checkoutForm .checkoutForm__ShippingAddress input {
+  height: 45px;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #B1B1B1;
+  vertical-align: center;
+  background-color: #FFFFFF;
+  padding-left: 16px;
+  padding-right: 16px;
+  border: 1px solid #A4A4A4;
+  margin-bottom: 21px;
+}
+.cart .checkoutForm .checkoutForm__ShippingAddress input:first-of-type {
+  color: #B1B1B1;
+}
+.cart .checkoutForm .checkoutForm__ShippingAddress .cart__Button {
+  width: 100px;
+  height: 34px;
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 13px;
+  color: #4A4A4A;
+  margin-top: 3px;
+  padding: 0;
+  transition: background 0.4s;
+}
+.cart .checkoutForm .checkoutForm__PriceField {
+  width: 360px;
+  height: 214px;
+  background: #F5F3F3;
+  padding: 39px 37px 42px 44px;
+  display: flex;
+  flex-direction: column;
+}
+.cart .checkoutForm .checkoutForm__PriceField .checkoutForm__PriceBox {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  border-bottom: 1px solid #E2E2E2;
+}
+.cart .checkoutForm .checkoutForm__PriceField .checkoutForm__PriceBox .checkoutForm__SubTotal,
+.cart .checkoutForm .checkoutForm__PriceField .checkoutForm__PriceBox .checkoutForm__GrandTotal {
+  display: flex;
+  justify-content: space-between;
+}
+.cart .checkoutForm .checkoutForm__PriceField .checkoutForm__PriceBox .checkoutForm__SubTotal {
+  width: 108px;
+  font-size: 11px;
+  line-height: 13px;
+  color: #4A4A4A;
+  padding-bottom: 12px;
+}
+.cart .checkoutForm .checkoutForm__PriceField .checkoutForm__PriceBox .checkoutForm__GrandTotal {
+  width: 170px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+  padding-bottom: 21px;
+}
+.cart .checkoutForm .checkoutForm__PriceField .checkoutForm__PriceBox .checkoutForm__GrandTotal .finalPrice {
+  color: #F16D7F;
+}
+.cart .checkoutForm .checkoutForm__PriceField input {
+  align-self: center;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+  background: #F16D7F;
+  padding: 15px 43px 16px 41px;
+  margin-top: 17px;
+  transition: background 0.4s;
+}
+.cart .checkoutForm .checkoutForm__PriceField input:hover {
+  background: #E05C6E;
+}

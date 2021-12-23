@@ -1,0 +1,149 @@
+@media (max-width: 1200px) {
+  .featuredItems.product .featuredItems__Box.product .featuredItems__Card:last-child {
+    display: none;
+  }
+
+  .cart {
+    flex-direction: column;
+    align-content: center;
+    margin-bottom: 0px;
+  }
+  .cart .shoppingList {
+    margin-bottom: 64px;
+  }
+  .cart .shoppingList .shoppingList__Box {
+    padding-left: 30px;
+  }
+  .cart .shoppingList .shoppingList__Buttons {
+    justify-content: space-around;
+  }
+  .cart .checkoutForm {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .cart .checkoutForm .checkoutForm__ShippingAddress {
+    width: 345px;
+    margin-bottom: 0px;
+  }
+  .cart .checkoutForm .checkoutForm__PriceField {
+    width: 345px;
+    margin-top: 39px;
+    margin-left: 30px;
+  }
+
+  .registration .registration__Form {
+    margin-right: 64px;
+  }
+}
+@media (max-width: 1024px) {
+  .center {
+    padding-left: calc(50% - 368px);
+    padding-right: calc(50% - 368px);
+  }
+
+  .promo {
+    margin-bottom: 20px;
+  }
+  .promo .promo__Content h1 {
+    font-size: 37px;
+    line-height: 44px;
+  }
+  .promo .promo__Content h3 {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .sale {
+    margin-bottom: 154px;
+  }
+  .sale .sale__Box {
+    margin-bottom: 20px;
+  }
+  .sale .sale__Box div:not(:last-child) {
+    margin-right: 20px;
+  }
+
+  .featuredItems.catalog .featuredItems__Box.catalog .featuredItems__Card:last-child {
+    display: none;
+  }
+
+  .featuredItems .featuredItems__Title {
+    margin-bottom: 73px;
+  }
+  .featuredItems .featuredItems__Title h2 {
+    margin-bottom: 3px;
+  }
+  .featuredItems .featuredItems__SortingPart {
+    justify-content: space-between;
+  }
+  .featuredItems .featuredItems__SortingPart .featuredItems__Parameters {
+    justify-content: center;
+  }
+  .featuredItems .featuredItems__Box {
+    gap: 15px;
+  }
+  .featuredItems .featuredItems__ButtonBrowse {
+    margin-top: 33px;
+  }
+
+  .productCard .productCard__Description {
+    max-width: 100%;
+  }
+
+  .registration .registration__Form {
+    margin-right: 64px;
+  }
+  .registration .registration__LoyaltyProgram h3 {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .registration .registration__LoyaltyProgram p {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .registration .registration__LoyaltyProgram ul {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .footer {
+    margin-top: 65px;
+  }
+  .footer .footer__AdvantagesBox {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 48px;
+    margin-bottom: 64px;
+  }
+  .footer .footer__AdvantagesBox .footer__AdvantagesCard:not(:last-child) {
+    margin-right: 0px;
+    margin-bottom: 48px;
+  }
+  .footer .footer__Subscribe {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 64px;
+    padding-bottom: 104px;
+  }
+  .footer .footer__Subscribe .footer__SubscribeCard {
+    width: 360px;
+    justify-content: flex-start;
+    margin-bottom: 48px;
+  }
+  .footer .footer__Subscribe .footer__SubscribeCard img {
+    margin-bottom: 30px;
+  }
+  .footer .footer__Subscribe .footer__SubscribeForm {
+    padding-top: 0px;
+  }
+  .footer .footer__Subscribe .footer__SubscribeForm h3 {
+    font-size: 24px;
+    line-height: 27px;
+    margin-bottom: 5px;
+  }
+  .footer .footer__Subscribe .footer__SubscribeForm p {
+    font-size: 18px;
+    line-height: 29px;
+    margin-bottom: 27px;
+  }
+}

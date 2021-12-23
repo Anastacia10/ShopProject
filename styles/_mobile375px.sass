@@ -1,0 +1,220 @@
+@media(max-width: 425px)
+    .center
+        padding-left: 6px
+        padding-right: 6px
+
+    .header
+        .header__Right
+
+            .nav
+                .header__Links_mob
+                    display: block
+
+            .header__Links
+                display: none
+
+    .promo
+        margin-bottom: 64px
+        .promo__Left
+            display: none
+
+        .promo__Right
+            width: 100%
+
+            .promo__Content
+                margin-top: 0
+                margin-top: 148px
+                margin-bottom: 149px
+                margin-left: 56px
+
+                & h1
+                    font-size: 38px
+                    line-height: 46px
+
+                & h3
+                    font-size: 20px
+                    line-height: 24px
+
+                & span
+                    color: #F16D7F
+
+    .sale
+        margin-bottom: 64px
+
+        & div:last-child
+                margin-left: 25px
+
+
+        & img
+            width: 100%
+
+        .sale__Box
+            display: flex
+            flex-direction: column
+            margin-bottom: 32px
+            align-items: center
+
+            >.sale__Item
+                width: 343px
+                min-height: 248px
+
+            & div:not(:last-child)
+                margin-right: 0
+                margin-bottom: 32px
+
+        >.sale__Item
+            width: 343px
+            min-height: 111px
+            position: relative
+            transition: transform 0.4s
+
+            & a
+                display: block
+            & img
+                height: 111px
+
+        &__Item:hover
+            transform: scale(1.03)
+
+        .sale__Content
+            position: absolute
+            top: 0
+            left: 0
+            height: 100%
+            width: 100%
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+
+            & p
+                font-size: 16px
+                line-height: 19px
+                text-align: center
+                color: #FFFFFF
+
+            & h3
+                font-size: 24px
+                line-height: 29px
+                text-align: center
+                color: #F16D7F
+
+    .featuredItems
+        display: flex
+        flex-flow: column nowrap
+
+        .featuredItems__Title
+            margin-bottom: 65px
+
+        .featuredItems__Box
+            display: flex
+            flex-flow: column
+            gap: 0
+            align-items: center
+
+            .featuredItems__Card
+                width: 343px
+                margin-bottom: 16px
+
+                .featuredItems__CardPhoto img
+                    width: 342px  
+
+        .featuredItems__SortingPart
+
+            margin-top: 26px
+            margin-bottom: 32px
+
+            .featuredItems__FilterBox
+                height: 48px
+                width: 360px 
+                margin-right: 5px
+
+                .featuredItems__FilterMain
+
+                    padding: 10px 6px 10px
+
+                    .FeaturedItems__FilterMainName span
+                        display: none
+                    
+                    .FeaturedItems__FilterMainName svg
+                        width: 38px
+                        height: 25px
+
+                    .featuredItems__FilterInserted
+                        margin-top: 16px
+
+            .featuredItems__Parameters
+                column-gap: 20px
+
+                & summary
+                    font-size: 12px
+                    line-height: 14px
+
+                & span:not(:last-child)
+                    margin-right: 7px
+
+    .page__Name
+            flex-direction: column
+            justify-content: flex-start
+            align-items: center
+
+            & h2
+                padding-top: 24px
+
+            & ul
+                padding-top: 32px
+
+            & li:not(:last-child)::after
+                content: '/'
+                padding-left: 8px
+                padding-right: 8px
+
+            & a
+                font-weight: 300
+                font-size: 14px
+                line-height: 17px
+                color: #636363
+
+            & li:last-of-type a
+                color: #F16D7F
+
+            & a:hover
+                color: #F16D7F    
+
+    .footer
+        .footer__AdvantagesBox
+            .footer__AdvantagesCard
+                width: 343px
+
+        .footer__Subscribe
+
+            .footer__SubscribeCard
+                width: 343px
+
+            .footer__SubscribeForm
+                width: 343px
+
+                & input
+                    width: 243px
+
+        .footer__Contacts
+            height: auto
+            display: flex
+            flex-direction: column-reverse
+            padding-top: 43px
+            padding-bottom: 9px
+
+            & div
+                justify-content: center
+
+            .footer__ContactsSocialNetworks
+                margin-bottom: 40px
+
+@media(max-width: 375px)
+    .sale
+        & div:last-child
+            margin-left: 0px
+            
+    
+
+        
